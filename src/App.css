@@ -1,38 +1,229 @@
-.App {
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent;
+}
+.header {
+  padding: 0px;
+  position: absolute;
+  width: 100vw;
+  top: 0px;
+  z-index: 1;
+}
+.buttonh {
+  float: right;
+  border-radius: 50px;
+  color: white;
+  margin: 10px;
+  margin-top: 30px;
+}
+.buttonh-l {
+  background: linear-gradient(90deg, #1157a0 0%, rgba(42, 163, 239, 0.91) 100%);
+  width: 200px;
+}
+.buttonh-t {
+  background-color: transparent;
+  color: #00a9f2;
+}
+
+.text1 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 100%;
+
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5vw;
+  line-height: 74px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text1 .t1 {
+  color: #279ceb;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text1 .t2 {
+  color: #1157a0;
 }
+.rectangle1 {
+  position: absolute;
+  width: 77vw;
+  height: 100vh;
+  margin: 0;
+  background-image: url("./components/Rectangle1.svg");
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+}
+.rectangle1 p {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: #828282;
+
+  width: 60%;
+}
+.rectangle1 .data {
+  position: relative;
+  top: 40%;
+}
+.rectangle2 {
+  position: absolute;
+  width: 77vw;
+  height: 100vh;
+  margin-left: 23vw;
+  top: 90%;
+  background-image: url("./components/Rectangle2.svg");
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+}
+.rectangle2 .data {
+  position: relative;
+  top: 40%;
+}
+.rectangle2 .data p {
+  padding-right: 30px;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  color: #2cafef;
+}
+.rectangle2 .data div {
+  padding-right: 30px;
+  float: right;
+}
+.rectangle2 .data div span {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  float: right;
+  margin: 5px;
+
+  border-radius: 25px;
+  padding: 0 30px 0 30px;
+}
+.c1 {
+  position: absolute;
+  width: 50vw;
+  height: 80vh;
+  right: 0px;
+  top: 20vh;
+  margin-right: 30px;
+  transform: rotate(-15.67deg);
+}
+.c2 {
+  position: absolute;
+  width: 26vw;
+  height: 70vh;
+  left: 111px;
+  top: 120%;
+}
+.ft1 {
+  position: absolute;
+  width: 100vw;
+  top: 190%;
+  text-align: center;
+}
+.ft2 {
+  position: absolute;
+  width: 100vw;
+  bottom: 0px;
+  text-align: center;
+}
+.f1 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 74px;
+  color: #1157a0;
+  margin: 60px;
+}
+.f2 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 37px;
+}
+.buttonf {
+  border-radius: 50px;
+  background-color: #2aa3ef;
   color: white;
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.sform {
+  position: relative;
+  padding: 5px;
+  border: 1px solid #a9def5;
+  border-radius: 5px;
+  width: fit-content;
+  margin: auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sform input {
+  background-color: transparent;
+  border: none;
+  width: 300px;
+}
+.sform span {
+  background-color: transparent;
+  border: none;
+}
+.sico {
+  background-color: transparent;
+  margin-right: 15px;
+  border: 0px;
+}
+.f-left {
+  float: left;
+}
+.f-left a img {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+.f-right {
+  float: right;
+}
+.colf2 {
+  position: relative;
+  top: 65%;
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: bold;
+  background: -webkit-linear-gradient(
+    90deg,
+    #1157a0 0%,
+    rgba(42, 163, 239, 0.91) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  line-height: 22px;
+  text-decoration: none;
+}
+.colf3 {
+  position: relative;
+  top: 55%;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #828282;
+  text-decoration: none;
 }
