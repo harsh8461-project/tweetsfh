@@ -5,7 +5,6 @@ import {
 } from "react-router-dom";
 import './App.css';
 import Main from './components/Main';
-import IMG1 from './components/img1';
 import FOOTER from './components/footer';
 import HEADER from './components/header';
 

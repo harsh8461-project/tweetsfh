@@ -85,6 +85,7 @@ html {
   font-size: 75px;
   line-height: 74px;
   text-align: left;
+  animation: anim1 2s linear;
 }
 .text1 .t1 {
   color: #279ceb;
@@ -97,6 +98,7 @@ html {
   height: 500px;
   margin-left: -180px;
   margin-top: 10%;
+  animation: anim2 2s ease-out infinite;
 }
 .rectangle2 .data {
   margin-top: 20%;
@@ -362,5 +364,24 @@ html {
   }
   .rectangle2 {
     background-image: url("./components/Rectangle\ 22r.png");
+  }
+}
+@keyframes anim1 {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes anim2 {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
   }
 }
