@@ -1,7 +1,4 @@
 import React from 'react'
-import {
-  Link
-} from "react-router-dom";
 var p = process.env.PUBLIC_URL;
 
 export const header = () => {
@@ -15,9 +12,9 @@ export const header = () => {
                 width="200px"
               />
               <button type="button" className="mc btn buttonh buttonh-t btn-lg">
-                  <b><i class="bi bi-justify"></i></b>
+                  <b><i className="bi bi-justify"></i></b>
                 </button>
-              <span class="cm" >
+              <span className="cm" >
                 <button type="button" className="shadow-lg btn buttonh buttonh-l btn-lg ">
                   <b>Home</b>
                 </button>

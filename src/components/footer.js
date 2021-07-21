@@ -7,7 +7,7 @@ export const footer = () => {
     return (
         <div className="ft1">
             <div>
-                <p className="ftext1">With #TweetsFromHome, express your love<br class="cm"/> for your favourite creator.</p>
+                <p className="ftext1">With #TweetsFromHome, express your love<br className="cm"/> for your favourite creator.</p>
                 <p className="ftext2"> 
                     <b className="cm">Choose the top tweets that you absolutely admire to create your version of their #TweetsFromHome wall and simply share on Twitter. </b>
                     <b className="mc">Choose the top tweets that you absolutely admire to create a wall and simply share on Twitter. </b>
@@ -18,7 +18,7 @@ export const footer = () => {
                 </form>
                 <button type="button" className="btn buttonf btn-lg"><b>Sign In to Continue</b></button>
             </div>
-                <hr class="mc" />
+                <hr className="mc" />
             <div id="lowerfooter" >
                 <div className="row">
                     <div className="col">

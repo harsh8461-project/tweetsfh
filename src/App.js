@@ -14,8 +14,6 @@ function App() {
       <Switch>
         <Route path="/">
           <HEADER/>
-          <Main />
-          {/*<IMG1 />*/}
           <FOOTER />
         </Route>
         </Switch>

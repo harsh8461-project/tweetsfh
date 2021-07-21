@@ -8,7 +8,7 @@ export const Main = () => {
             <img alt="tablet component" className="image1" src={p + "/Component 27.png"} />
         </div>
         <span className="data">
-          <p class="cm">
+          <p className="cm">
             Support your favourite creator by sharing their #TweetsFromHome wall
             with your loved ones and grow their community.
           </p>
@@ -30,8 +30,8 @@ export const Main = () => {
           </span>
           <span>
           <button id="s1" type="button" className="btn buttonf btn-lg">
-            <b class="cm">View Tweets from Home</b>
-            <b class="mc">Login with Twitter</b>
+            <b className="cm">View Tweets from Home</b>
+            <b className="mc">Login with Twitter</b>
           </button>
           </span>
         </span>
@@ -50,10 +50,10 @@ export const Main = () => {
                 <p>CREATORS SHAPE CULTURE.</p>
                 <p className="mc">2 in 3 twitter users agree that creators change and shape culture </p>
                 </div>
-                <br class="cm"/>
-                <br class="cm" />
-                <br class="cm" />
-                <br class="cm" />
+                <br className="cm"/>
+                <br className="cm" />
+                <br className="cm" />
+                <br className="cm" />
                 <div className="colortags">
                   <span style={{ backgroundColor: "#D1F7C4" }}>#everydays</span>
                   <span style={{ backgroundColor: "#ffdce5" }}>#HiArmy</span>
