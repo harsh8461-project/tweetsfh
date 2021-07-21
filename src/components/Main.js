@@ -1,19 +1,19 @@
 import React from "react";
-import "./Main.css";
 var p = process.env.PUBLIC_URL;
 export const Main = () => {
   return (
     <div>
-      <div className="container-xxl rectangle1">
+      <div className="rectangle1">
+      <div>
+            <img alt="tablet component" className="image1" src={p + "/Component 27.png"} />
+        </div>
         <span className="data">
-          <p>
+          <p class="cm">
             Support your favourite creator by sharing their #TweetsFromHome wall
             with your loved ones and grow their community.
           </p>
-          <form
-            style={{ margin: "10px", borderWidth: "0 0 2px 0" }}
-            className="sform"
-          >
+          <span>
+          <form id="comp" className="sform">
             <button type="submit" className="sico">
               <i
                 style={{ fontSize: "20px", color: "grey" }}
@@ -27,37 +27,44 @@ export const Main = () => {
               aria-label="Creator"
             />
           </form>
-          <button type="button" className="btn buttonf btn-lg">
-            <b>View Tweets from Home</b>
+          </span>
+          <span>
+          <button id="s1" type="button" className="btn buttonf btn-lg">
+            <b class="cm">View Tweets from Home</b>
+            <b class="mc">Login with Twitter</b>
           </button>
+          </span>
         </span>
       </div>
-      <div
-        style={{
-          backgroundImage: "url(/Rectangle 112.png})",
-        }}
-        className="container-xxl rectangle2"
-      >
-        <span className="data">
-          <p>CREATORS SHAPE CULTURE.</p>
-          <br />
-          <br />
-          <br />
-          <br />
-          <div>
-            <span style={{ backgroundColor: "#D1F7C4" }}>#everydays</span>
-            <span style={{ backgroundColor: "#ffdce5" }}>#HiArmy</span>
-            <br />
-            <span style={{ backgroundColor: "#72DDC3" }}>#BTS</span>
-            <span style={{ backgroundColor: "#FEE2D5" }}>#teamtrees</span>
-            <br />
-            <span style={{ backgroundColor: "#9CC7FF" }}>#botarmy</span>
+      <div className="rectangle2">
+          <div className="text1">
+            <span className="t1">Creators </span>
+            <span className="t2">are Powerful</span>
           </div>
-        </span>
-      </div>
-      <div className="container-xxl text1">
-        <span className="t1">Creators </span>
-        <span className="t2">are Powerful</span>
+            <div className="row">
+              <div id="one" className="col-4">
+                <img alt="profile component" className="image2" src={p + "/Component 14.png"} />
+              </div >
+              <span id="two" className="data col">
+                <div>
+                <p>CREATORS SHAPE CULTURE.</p>
+                <p className="mc">2 in 3 twitter users agree that creators change and shape culture </p>
+                </div>
+                <br class="cm"/>
+                <br class="cm" />
+                <br class="cm" />
+                <br class="cm" />
+                <div className="colortags">
+                  <span style={{ backgroundColor: "#D1F7C4" }}>#everydays</span>
+                  <span style={{ backgroundColor: "#ffdce5" }}>#HiArmy</span>
+                  <br />
+                  <span style={{ backgroundColor: "#72DDC3" }}>#BTS</span>
+                  <span style={{ backgroundColor: "#FEE2D5" }}>#teamtrees</span>
+                  <br />
+                  <span style={{ backgroundColor: "#9CC7FF" }}>#botarmy</span>
+                </div>
+              </span>
+            </div>
       </div>
     </div>
   );

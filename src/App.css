@@ -3,14 +3,17 @@ html {
   overflow-x: hidden;
   overflow-wrap: break-word;
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
   background: transparent;
 }
+/*header file css START*/
 .header {
-  padding: 0px;
   position: absolute;
+  padding: 0px;
   width: 100vw;
   top: 0px;
   z-index: 1;
@@ -30,19 +33,58 @@ html {
   background-color: transparent;
   color: #00a9f2;
 }
-
+.mc {
+  display: none;
+}
+/*header file css END*/
+/*rectangle1 css START*/
+.rectangle1 {
+  padding: 0px;
+  width: 77vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-image: url("./components/Rectangle\ 11.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.rectangle1 .data {
+  margin-top: 25%;
+  margin-bottom: 20%;
+  margin-left: 25px;
+}
+.rectangle1 p {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 21px;
+  color: #828282;
+  width: 60%;
+}
+/* check for search and button in footer section */
+/* rectangle1 css END*/
+/* rectangle2 css START*/
+.rectangle2 {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 77vw;
+  margin-left: 23vw;
+  margin-top: -10vh;
+  background-image: url("./components/Rectangle\ 22.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 .text1 {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 100%;
-
+  width: 100%;
+  margin-top: 6%;
   font-family: Helvetica;
   font-style: normal;
   font-weight: bold;
-  font-size: 5vw;
+  font-size: 75px;
   line-height: 74px;
-  text-align: center;
+  text-align: left;
 }
 .text1 .t1 {
   color: #279ceb;
@@ -50,56 +92,30 @@ html {
 .text1 .t2 {
   color: #1157a0;
 }
-.rectangle1 {
-  position: absolute;
-  width: 77vw;
-  height: 100vh;
-  margin: 0;
-  background-image: url("./components/Rectangle1.svg");
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-}
-.rectangle1 p {
-  font-family: Helvetica;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: #828282;
-
-  width: 60%;
-}
-.rectangle1 .data {
-  position: relative;
-  top: 40%;
-}
-.rectangle2 {
-  position: absolute;
-  width: 77vw;
-  height: 100vh;
-  margin-left: 23vw;
-  top: 90%;
-  background-image: url("./components/Rectangle2.svg");
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
+.image2 {
+  width: 350px;
+  height: 500px;
+  margin-left: -180px;
+  margin-top: 10%;
 }
 .rectangle2 .data {
-  position: relative;
-  top: 40%;
+  margin-top: 20%;
+  margin-bottom: 10%;
 }
 .rectangle2 .data p {
   padding-right: 30px;
   font-family: Helvetica;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 30px;
   text-align: right;
   letter-spacing: 0.04em;
   color: #2cafef;
 }
-.rectangle2 .data div {
+.rectangle2 .data .mc {
+  color: #37495c;
+}
+.rectangle2 .data .colortags {
   padding-right: 30px;
   float: right;
 }
@@ -107,62 +123,53 @@ html {
   font-family: Helvetica;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 20px;
   float: right;
   margin: 5px;
-
   border-radius: 25px;
   padding: 0 30px 0 30px;
 }
-.c1 {
+/* rectangle2 css END*/
+/* img1 css START*/
+.image1 {
   position: absolute;
-  width: 50vw;
-  height: 80vh;
+  width: 600px;
+  height: 540px;
   right: 0px;
   top: 20vh;
   margin-right: 30px;
-  transform: rotate(-15.67deg);
 }
-.c2 {
+/* img1 css END*/
+/* img1 css START*/
+.image3 {
   position: absolute;
-  width: 26vw;
-  height: 70vh;
+  width: 350px;
+  height: 500px;
   left: 111px;
-  top: 120%;
+  top: 110%;
 }
+/* img1 css END*/
+/* footer css START*/
 .ft1 {
-  position: absolute;
   width: 100vw;
-  top: 190%;
   text-align: center;
 }
-.ft2 {
-  position: absolute;
-  width: 100vw;
-  bottom: 0px;
-  text-align: center;
+.ft1 #lowerfooter {
+  margin-top: 15vh;
 }
-.f1 {
+.ftext1 {
   font-family: Helvetica;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
-  line-height: 74px;
   color: #1157a0;
-  margin: 60px;
 }
-.f2 {
+.ftext2 {
   font-family: Helvetica;
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
-  line-height: 37px;
-}
-.buttonf {
-  border-radius: 50px;
-  background-color: #2aa3ef;
-  color: white;
-  margin: 10px;
+  color: #585858;
 }
 
 .sform {
@@ -187,16 +194,38 @@ html {
   margin-right: 15px;
   border: 0px;
 }
+#comp {
+  margin: 10px;
+  border-width: 0 0 2px 0;
+}
+.buttonf {
+  border-radius: 50px;
+  background-color: #2aa3ef;
+  color: white;
+  margin: 10px;
+}
 .f-left {
   float: left;
 }
-.f-left a img {
+.f-right {
+  float: right;
+}
+.footico {
   height: 15px;
   width: 15px;
   margin-right: 10px;
 }
-.f-right {
-  float: right;
+.footimg1 {
+  height: 50px;
+  width: 50px;
+}
+.footimg2 {
+  height: 30px;
+  width: 150px;
+}
+.footimg3 {
+  height: 20px;
+  width: 150px;
 }
 .colf2 {
   position: relative;
@@ -213,7 +242,6 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 20px;
-  line-height: 22px;
   text-decoration: none;
 }
 .colf3 {
@@ -223,7 +251,116 @@ html {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
   color: #828282;
   text-decoration: none;
+}
+/* footer css END*/
+@media only screen and (max-width: 992px) {
+  .cm {
+    display: none;
+  }
+  .mc {
+    display: block;
+  }
+  .rectangle1 {
+    width: 100vw;
+  }
+  .image1 {
+    position: relative;
+    width: 60vw;
+    height: 60vw;
+    right: 20vw;
+    left: 20vw;
+    top: 10vh;
+    margin-right: 30px;
+  }
+  .rectangle1 .data {
+    width: 100%;
+    margin: 50% 0 0 0;
+    align-items: center;
+  }
+  .rectangle1 .data span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sform input {
+    background-color: transparent;
+    border: none;
+    width: 60vw;
+    font-size: 15px;
+  }
+  #comp {
+    margin: initial;
+    border-width: initial;
+  }
+  .rectangle2 {
+    width: 100vw;
+    margin-left: 0vw;
+    margin-top: 0vh;
+  }
+  .rectangle2 .data {
+    margin-top: 5%;
+  }
+  .text1 {
+    margin-top: 6%;
+    font-size: 8vw;
+    line-height: 74px;
+    text-align: center;
+  }
+  .row #one {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image2 {
+    width: 250px;
+    height: 400px;
+    margin-left: 0px;
+    margin-top: 10%;
+  }
+  .rectangle2 .data p {
+    padding-right: 00px;
+    font-size: 5vw;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+  .rectangle2 .data div span {
+    float: none;
+    font-size: 5vw;
+    padding: 0 40px 0 40px;
+    margin: 7px;
+  }
+  .rectangle2 .data .colortags {
+    padding-right: 0px;
+    float: none;
+    text-align: center;
+  }
+  .ftext1 {
+    padding: 5px;
+    font-weight: 700;
+    font-size: 6vw;
+  }
+  .ftext2 {
+    font-size: 4vw;
+  }
+  .ft1 #lowerfooter {
+    margin-top: 0;
+  }
+  .footimg1 {
+    height: 40px;
+    width: 40px;
+  }
+  .colf2 {
+    top: 0;
+    font-size: 16px;
+  }
+  .colf3 {
+    top: 0;
+    float: none;
+  }
+  .rectangle2 {
+    background-image: url("./components/Rectangle\ 22r.png");
+  }
 }
