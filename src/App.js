@@ -14,6 +14,7 @@ function App() {
       <Switch>
         <Route path="/">
           <HEADER/>
+           <Main />
           <FOOTER />
         </Route>
         </Switch>
